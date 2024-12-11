@@ -1,6 +1,5 @@
-const linkAPI = 'https://localhost:7057/MinimalCinema/Pelicula';
-const swiperWrapper = document.querySelector('.swiper-wrapper');
-
+const linkAPI = 'https://localhost:7057/MinimalCinema/Pelicula'; // API para obtener las películas
+const swiperWrapper = document.querySelector('.swiper-wrapper'); // Elemento donde se insertan las películas en el carrusel
 
 fetch(linkAPI)
   .then(response => {
@@ -9,6 +8,7 @@ fetch(linkAPI)
     }
     return response.json(); 
   })
+  
   .then(data => {
     swiperWrapper.innerHTML = '';
 

@@ -129,17 +129,17 @@
 
 .butacas__seat-free {
   @include seat($widht-seat, $height-seat, $display-seat, $background-size-seat, $background-position-seat);
-  background-image: url('../../build/images/asiento_gris.png');
+  background-image: url('../images/asiento_gris.png');
 }
 
 .butacas__seat-selected {
   @include seat($widht-seat, $height-seat, $display-seat, $background-size-seat, $background-position-seat);
-  background-image: url('../../build/images/asiento_amarillo.png');
+  background-image: url('../images/asiento_amarillo.png');
 }
 
 .butacas__seat-occupied {
   @include seat($widht-seat, $height-seat, $display-seat, $background-size-seat, $background-position-seat);
-  background-image: url('../../build/images/asiento_rojo.png');
+  background-image: url('../images/asiento_rojo.png');
 }
 
 .butacas__screen {

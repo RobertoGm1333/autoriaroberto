@@ -1,4 +1,4 @@
-
+// URLs para las APIs de Película
 const peliculaApiUrl = 'https://localhost:7057/MinimalCinema/Pelicula';
 
 const caratulaElement = document.querySelector('.pelicula__movie-poster img');

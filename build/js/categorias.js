@@ -25,6 +25,8 @@ fetch('https://localhost:7057/MinimalCinema/Pelicula')
 
 
 
+
+ // URL de tu API
 const apiUrl = 'https://localhost:7057/MinimalCinema/Pelicula';
 
 const botonesCategoria = document.querySelectorAll('.categorias__category-buttons button');

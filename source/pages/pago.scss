@@ -35,10 +35,11 @@
   .pago__summary-section {
     padding-bottom: 10px;
     color: white;
+    padding-top: 33px;
   }
   
   .pago__personal-info-section {
-    padding-top: 10px;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -85,14 +86,22 @@
   
   .pago__details-content {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     color: white;
   }
   
   .pago__detalles {
     display: grid;
     justify-items: center;
+    padding-top: 50px;
+  }
+
+
+  .pago__detalles a{
+    text-decoration: none;
+    color: white;
     padding-top: 20px;
+    padding-bottom: 11%;
   }
   
   #tickets {

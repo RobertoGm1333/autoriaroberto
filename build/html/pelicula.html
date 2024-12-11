@@ -6,6 +6,10 @@
     <title>Pelicula</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <header class="nav-bar">
     <div class="nav-bar__logo">
@@ -48,9 +52,6 @@
                           </button>
                         </a>
                       </div>
-                      
-
-
                 </div>
             </div>
         </section>
@@ -62,28 +63,48 @@
                 </a>
             </div>
         </section>
+        <section class="seccion-resenas">
+            <h3> Reseñas</h3>
+            <div class="resenas">
+                
+            </div>
+            <div class="rellenar-resena">
+                <div class="resena-form">
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="resena-form">
+                    <label for="nombre">Puntuación (1-5)</label>
+                    <input type="number" value="1" min="1" max="5" id="puntuacion" required>
+                </div>
+                <div class="resena-form">
+                    <label for="nombre">Reseña</label>
+                    <input type="text" id="Resena" required>
+                </div>
+            <button class="boton-resena">Añadir reseña</button>
+            </div>
+        </section>
     </main>
 </body>
 <script src="../js/pelicula.js" defer></script>
-
-
+<script src="../js/resena.js" defer></script>
 <footer class="footer--grid">
-    <div class="footer--contenedor">
-        <a href="../html/PoliticaPrivacidad.html">Politica de Privacidad</a>
-    </div>
-    <div class="footer--contenedor">
-        <a href="../html/PoliticaCoockies.html">Politica de Coockies</a>
-    </div>
-    <div class="align-icons">
-        <div class="footer--contenedor">
-           <a href="https://x.com/i/flow/login"><img src="../images/logo_tiwtter.png" alt="Twitter"></a>
-        </div>
-        <div class="footer--contenedor">
-            <a href="https://www.instagram.com/accounts/login/"> <img src="../images/logo_instagram.png" alt="Instagram"> </a>
-        </div>
-        <div class="footer--contenedor">
-            <a href="https://discord.com/login"> <img src="../images/logo_discord.png" alt="Discord"></a>
-        </div>
-    </div>
+  <div class="footer--contenedor">
+      <a href="PoliticaPrivacidad.html">Politica de Privacidad</a>
+  </div>
+  <div class="footer--contenedor">
+      <a href="PoliticaCoockies.html">Politica de Coockies</a>
+  </div>
+  <div class="align-icons">
+      <div class="footer--contenedor">
+         <a href="https://x.com/i/flow/login"><img src="../images/logo_tiwtter.png" alt="Twitter"></a>
+      </div>
+      <div class="footer--contenedor">
+          <a href="https://www.instagram.com/accounts/login/"> <img src="../images/logo_instagram.png" alt="Instagram"> </a>
+      </div>
+      <div class="footer--contenedor">
+          <a href="https://discord.com/login"> <img src="../images/logo_discord.png" alt="Discord"></a>
+      </div>
+  </div>
 </footer>
 </html>

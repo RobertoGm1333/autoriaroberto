@@ -1,4 +1,74 @@
 @charset "UTF-8";
+
+.seccion-resenas{
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  align-items: center;
+}
+
+.resenas{
+  color:blue;
+}
+
+.rellenar-resena {
+  color: white;
+  display: grid;
+  justify-items:center
+}
+
+.boton-resena :hover{
+  color: #E50914;
+}
+
+.resena-form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.resena-form label {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+.resena-form input[type=text],
+.resena-form input[type=number] {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  width: 200px;
+}
+.resena-form input[type=text]:focus,
+.resena-form input[type=number]:focus {
+  outline: none;
+  border-bottom: 1px solid #E50914;
+}
+
+
+.boton-resena {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.boton-resena:hover {
+  background-color: #E50914;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
 body {
   background-color: #08050a;
   margin: 0;
@@ -664,7 +734,7 @@ a {
   display: inline-block;
   background-size: cover;
   background-position: center;
-  background-image: url("../../build/images/asiento_gris.png");
+  background-image: url("../images/asiento_gris.png");
 }
 
 .butacas__seat-selected {
@@ -673,7 +743,7 @@ a {
   display: inline-block;
   background-size: cover;
   background-position: center;
-  background-image: url("../../build/images/asiento_amarillo.png");
+  background-image: url("../images/asiento_amarillo.png");
 }
 
 .butacas__seat-occupied {
@@ -682,7 +752,7 @@ a {
   display: inline-block;
   background-size: cover;
   background-position: center;
-  background-image: url("../../build/images/asiento_rojo.png");
+  background-image: url("../images/asiento_rojo.png");
 }
 
 .butacas__screen {
@@ -1112,10 +1182,11 @@ a {
 .pago__summary-section {
   padding-bottom: 10px;
   color: white;
+  padding-top: 33px;
 }
 
 .pago__personal-info-section {
-  padding-top: 10px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1165,14 +1236,21 @@ a {
 
 .pago__details-content {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   color: white;
 }
 
 .pago__detalles {
   display: grid;
   justify-items: center;
+  padding-top: 50px;
+}
+
+.pago__detalles a {
+  text-decoration: none;
+  color: white;
   padding-top: 20px;
+  padding-bottom: 11%;
 }
 
 #tickets {
@@ -1495,7 +1573,8 @@ a {
   }
 }
 .location {
-  padding: 50px;
+  padding: 75px;
+  padding-bottom: 15%;
   background-color: rgba(249, 249, 249, 0);
   text-align: center;
 }
@@ -1524,6 +1603,7 @@ a {
   align-items: center;
   height: 100%;
   gap: 20px;
+  padding-top: 45px;
 }
 
 .location__info {
@@ -1628,7 +1708,8 @@ p.location__description {
   line-height: 1.6;
 }
 .cookies__content {
-  padding: 20px;
+  padding: 75px;
+  padding-bottom: 10%;
   max-width: 1200px;
   margin: 0 auto;
   color: #fff;
@@ -1742,7 +1823,7 @@ p.location__description {
   }
 }
 .privacy-content {
-  padding: 20px;
+  padding: 50px;
   max-width: 1200px;
   margin: 0 auto;
   color: white;
